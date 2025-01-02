@@ -28,6 +28,13 @@ function Download() {
         });
     }
 
+    datas.push({
+        prompt: "Sometimes, the situations doesn’t fit into any predefined category. Please help me create a record for these scenarios by saving the following details:\nA descriptive name for the situation.\nA short summary or notes about it.\nThe date it occurred (today's date).",
+        tableTitle: "Miscellaneous",
+        title: "name",
+        attributes: [{"label": "summary", "type": "text"}, {"label": "date", "type": "date"}]
+    });
+
     text = JSON.stringify(datas, null, 2);
     console.log(text)
 
