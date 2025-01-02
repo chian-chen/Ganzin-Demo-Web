@@ -12,7 +12,7 @@ function Download() {
             let label = document.getElementById(`data-label-${i + 1}-${j}`).value;
             let type = document.getElementById(`data-type-${i + 1}-${j}`).value;
 
-            if (label || type) {
+            if (label && type) {
                 attributes.push({
                     label: label,
                     type: type
